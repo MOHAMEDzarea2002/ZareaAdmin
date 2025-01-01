@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.15"
+  },
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/assets/style/input.css -o ./src/assets/style/output.css --watch"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.7"
+  }
+}

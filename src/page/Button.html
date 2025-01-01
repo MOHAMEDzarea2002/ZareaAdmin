@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  <!-- Tailwind css  -->
+  <link rel="stylesheet" href="../assets/style/output.css" />
+  <!-- font aweesomes  -->
+  <link rel="stylesheet" href="../assets/style/all.min.css" />
+  <!-- stylecss  -->
+  <link rel="stylesheet" href="../assets/style/style.css" />
+</head>
+
+<body>
+    <div class="page w-full p-2 overflow-x-hidden bg-slate-200 transition duration-500">
+        <!--###### strat sidebar  -->
+        <div
+            class="sidebar w-60 bg-white shadow-md shadow-slate-600 fixed z-40 transition duration-500 md:-translate-x-96 xl:translate-x-0 col-span-4 rounded-md">
+            <nav class=" ">
+                <div
+                    class="logo bg-gradient-to-r from-stone-900 to-gray-500 font-bold block w-full text-center shadow-sm shadow-slate-400">
+                    zarea
+                </div>
+                <ul class="overflow-hidden">
+                    <p class="text-gray-500 my-4 ml-3">Home</p>
+                    <a href="./index.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center justify-start py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-dot ml-4"></i>
+                        <div class="text-bar ml-3">Dashbord</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">Ui components</p>
+
+                    <a href="index.html"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-radiation ml-8 block w-8"></i>
+                        <div class="text-bar">Alert</div>
+                    </a>
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-dot ml-8 block w-8"></i>
+                        <div class="text-bar">Button</div>
+                    </a>
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-credit-card ml-8 block w-8"></i>
+                        <div class="text-bar">Cards</div>
+                    </a>
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-table-list ml-8 block w-8"></i>
+                        <div class="text-bar">Tables</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">AUTH</p>
+
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-right-to-bracket ml-8 block w-8"></i>
+                        <div class="text-bar">Login</div>
+                    </a>
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-user-plus ml-8 block w-8"></i>
+                        <div class="text-bar">Register</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">EXTRA</p>
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-table-list ml-8 block w-8"></i>
+                        <div class="text-bar">Icons</div>
+                    </a>
+                    <a href=" " draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-face-smile ml-8 block w-8"></i>
+                        <div class="text-bar">Sample Page</div>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <!-- End sidebar  -->
+        <!-- start wrapper -->
+        <div
+            class="wrapper m-1 md:w-full lg:w-10/12 xl:w-8/12 rounded-md md:translate-x-0 lg:translate-x-36 xl:translate-x-96 transition-transform duration-700">
+            <!--### start navigation -->
+            <div
+                class="navigation mt-1 max:w-full shadow-lg shadow-gray-200 w-11/12 mx-auto rounded-lg flex justify-between items-center p-2 bg-slate-50">
+                <div class="flex m-2">
+                    <div class="menu xl:hidden cursor-pointer mr-4" id="menu">
+                        <div><i class="fa-solid fa-bars"></i></div>
+                    </div>
+                    <div class="bell cursor-pointer">
+                        <i class="fa-classic fa-regular fa-bell fa-fw"></i>
+                    </div>
+                </div>
+                <div class="profile relative cursor-pointer">
+                    <img src="../assets/images/profile.jpg" class="rounded-full size-10 profile-img" alt="" draggable="false" />
+                    <div class="setting absolute bg-white p-1 w-36 rounded-lg z-50">
+                        <ul class="p-1">
+                            <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                                    class="fa-solid fa-user w-6 FLEX justify-center items-center"></i>
+                                <div class="title">My profile</div>
+                            </a>
+                            <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                                    class="fa-solid fa-file-invoice w-6 FLEX justify-center items-center"></i>
+                                <div class="title">My Account</div>
+                            </a>
+                            <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                                    class="fa-solid fa-list-check w-6 FLEX justify-center items-center"></i>
+                                <div class="title">My Task</div>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End navigation -->
+
+            <!--#### Start Button -->
+            <!-- start Defalur -->
+            <div class="Default bg-white my-4 rounded-lg shadow-md">
+                <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                    <h3>Default</h3>
+                </div>
+                <div class="flex justify-between items-center p-3 overflow-hidden flex-wrap max-sm:flex-col">
+                    <button
+                        class="bg-transparent py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-200 my-1"><span
+                            class="text-black ">elevates (default)</span></button>
+                    <button
+                        class="bg-blue-600 py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-400 my-1"><span
+                            class="text-white">Flat</span></button>
+                    <button
+                        class="bg-blue-200 py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-100 my-1"><span
+                            class="text-blue-600 ">Tonal</span></button>
+                    <button
+                        class=" py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-100 border-solid border-2 my-1"><span
+                            class="text-blue-600 ">Outlined</span></button>
+                    <button class="py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-100 my-1"><span
+                            class="text-blue-600 ">Text</span></button>
+                    <button class="py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-100 my-1"><span
+                            class="text-blue-400 ">Plain</span></button>
+                </div>
+            </div>
+            <!-- End Defalur -->
+            <!-- strat color and outlined  -->
+            <div class="flex max-sm:flex-col mb-3">
+                <!-- start colors  -->
+                <div class="colors bg-white overflow-hidden sm:w-1/2 sm:mr-3 rounded-lg shadow-md">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>Colors</h3>
+                    </div>
+                    <div class="flex justify-between items-center p-3 overflow-hidden flex-wrap max-sm:flex-col">
+                        <button
+                            class="bg-blue-600 py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-300 my-1"><span
+                                class="text-white">Primary</span></button>
+                        <button
+                            class="bg-gray-500 py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-300 my-1"><span
+                                class="text-white font-semibold">Secondary</span></button>
+                        <button
+                            class=" bg-red-400 py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-300  my-1"><span
+                                class="text-white font-semibold">Error</span></button>
+                        <button
+                            class="bg-yellow-500 py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-300 my-1"><span
+                                class="text-white font-semibold">Warning</span></button>
+                        <button
+                            class="bg-green-500 py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-300 my-1"><span
+                                class=" text-white font-semibold">Success</span></button>
+                    </div>
+                </div>
+                <!-- End colors  -->
+
+                <!-- strat Outline  -->
+                <div class="outlined bg-white sm:w-1/2 rounded-lg max-sm:mt-3 shadow-md">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>Outlined</h3>
+                    </div>
+                    <div class="flex justify-between items-center p-3 overflow-hidden flex-wrap max-sm:flex-col">
+                        <button
+                            class="bg-transparent py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-200 my-1 border-2 border-blue-400"><span
+                                class="text-blue-600">Primary</span></button>
+                        <button
+                            class="bg-transparent py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-200 my-1 border-2 border-gray-400"><span
+                                class="text-gray-500 ">Secondary</span></button>
+                        <button
+                            class="bg-gray-300 py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-200  border-solid border-2 my-1 "><span
+                                class="text-gray-400 ">Disabled</span></button>
+                        <button
+                            class="bg-transparent py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-200 my-1 border-cyan-400 border-2"><span
+                                class="text-cyan-400 ">Link</span></button>
+                    </div>
+                </div>
+                <!-- End  Outline  -->
+
+            </div>
+            <!-- End color and outlined  -->
+            <!-- strat Size  -->
+            <div class="size bg-white rounded-lg shadow-md">
+                <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                    <h3>Size</h3>
+                </div>
+                <div class="items-size flex justify-between p-3 max-md:flex-col">
+                    <button class=" "><span
+                            class="text-white bg-blue-500 text-xs rounded-sm p-1 active:bg-blue-200 transition-all duration-300">Extra
+                            Small</span></button>
+                    <button class=" my-2"><span
+                            class=" text-white rounded-md transition-all duration-300 active:bg-blue-200 bg-blue-500 text-sm p-2">Small</span></button>
+                    <button class=" my-2"><span
+                            class="text-white rounded-md transition-all duration-300 active:bg-blue-200 bg-blue-500 text-md  p-2">Normal</span></button>
+                    <button class=" my-2"><span
+                            class=" text-white rounded-md transition-all duration-300 active:bg-blue-200 bg-blue-500 text-xl  px-4 py-2">Large</span></button>
+                    <button class=" my-2"><span
+                            class=" text-white rounded-md transition-all duration-300 active:bg-blue-200 bg-blue-500 text-2xl  p-2">Extra
+                            Large</span></button>
+                </div>
+            </div>
+            <!-- End Size  -->
+            <!-- End Button -->
+
+        </div>
+        <!-- End wrapper -->
+    </div>
+    <script src="../assets/typeScripte/alert.js"></script>
+</body>
+
+</html>

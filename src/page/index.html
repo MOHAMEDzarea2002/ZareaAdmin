@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <!-- Tailwind css  -->
+  <link rel="stylesheet" href="../assets/style/output.css" />
+  <!-- font aweesomes  -->
+  <link rel="stylesheet" href="../assets/style/all.min.css" />
+  <!-- stylecss  -->
+  <link rel="stylesheet" href="../assets/style/style.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+  <div class="page w-full   p-2 overflow-x-hidden  bg-slate-200  transition duration-500">
+    <!--###### strat sidebar  -->
+    <div
+      class="sidebar w-60 bg-white   shadow-md shadow-slate-600 fixed z-40 transition duration-500 md:-translate-x-96 xl:translate-x-0 col-span-4 rounded-md ">
+      <nav class=" ">
+        <div
+          class="logo bg-gradient-to-r from-stone-900 to-gray-500 font-bold block w-full text-center shadow-sm shadow-slate-400">
+          zarea
+        </div>
+        <ul class="overflow-hidden">
+          <p class="text-gray-500 my-4 ml-3">Home</p>
+          <a href="../page/index.html" draggable="false"
+            class=" cursor-pointer mb-4 flex items-center justify-start py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-circle-dot ml-4"></i>
+            <div class="text-bar ml-3">Dashbord</div>
+          </a>
+          <p class="text-gray-500 my-4 ml-3">Ui components</p>
+
+          <a href="../page/alert.html" draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-circle-radiation ml-8 block w-8"></i>
+            <div class="text-bar">Alert</div>
+          </a>
+          <a href="../page/Button.html" draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-circle-dot ml-8 block w-8"></i>
+            <div class="text-bar">Button</div>
+          </a>
+          <a href="cards.html" draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-credit-card ml-8 block w-8"></i>
+            <div class="text-bar">Cards</div>
+          </a>
+          <a href=" " draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-table-list ml-8 block w-8"></i>
+            <div class="text-bar">Tables</div>
+          </a>
+          <p class="text-gray-500 my-4 ml-3">AUTH</p>
+
+          <a href=" " draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-right-to-bracket ml-8 block w-8"></i>
+            <div class="text-bar">Login</div>
+          </a>
+          <a href=" " draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-user-plus ml-8 block w-8"></i>
+            <div class="text-bar">Register</div>
+          </a>
+          <p class="text-gray-500 my-4 ml-3">EXTRA</p>
+          <a href=" " draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-table-list ml-8 block w-8"></i>
+            <div class="text-bar">Icons</div>
+          </a>
+          <a href=" " draggable="false"
+            class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500 "><i
+              class="fa-solid fa-face-smile ml-8 block w-8"></i>
+            <div class="text-bar">Sample Page</div>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <!-- End sidebar  -->
+     <!-- start wrapper -->
+    <div
+      class="wrapper m-1 md:w-full lg:w-5/6 xl:w-2/3  rounded-md md:translate-x-0 lg:translate-x-36  xl:translate-x-96  transition-transform duration-700">
+      <!--### start navigation -->
+      <div
+        class="navigation mt-1 max:w-full shadow-lg shadow-gray-200 w-12/12 mx-auto rounded-lg flex justify-between items-center p-2 bg-slate-50">
+        <div class="flex m-2">
+          <div class="menu xl:hidden cursor-pointer mr-4" id="menu">
+            <div><i class="fa-solid fa-bars"></i></div>
+          </div>
+          <div class="bell cursor-pointer">
+            <i class="fa-classic fa-regular fa-bell fa-fw"></i>
+          </div>
+        </div>
+        <div class="profile  relative cursor-pointer">
+          <img src="../assets/images/profile.jpg" class="rounded-full size-10 profile-img" alt="" draggable="false" />
+          <div class="setting absolute bg-white p-1 w-36  rounded-lg z-50">
+            <ul class="p-1">
+              <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                  class="fa-solid fa-user   w-6 FLEX justify-center items-center "></i>
+                <div class="title">My profile</div>
+              </a>
+              <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                  class="fa-solid fa-file-invoice   w-6 FLEX justify-center items-center "></i>
+                <div class="title">My Account</div>
+              </a>
+              <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                  class="fa-solid fa-list-check   w-6 FLEX justify-center items-center "></i>
+                <div class="title">My Task</div>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+       <!-- End navigation -->
+
+      <!--#### start dashbord -->
+      <div class="dashbord ">
+        <!--------------------- strat analysis -->
+        <div class="analysis  my-3 rounded-lg grid lg:grid-cols-3 md:grid-cols-1 ">
+          <div class="profit-expenses p-2 bg-white rounded-lg  lg:col-span-2  overflow-hidden relative ">
+            <div class="options relative right-0">
+              <i class="fa-solid fa-ellipsis-vertical cursor-pointer w-6 h-6 text-center" id="show-item" ></i>
+                <ul class="item-option bg-white shadow-md shadow-slate-300 rounded-xl p-2 absolute ">
+                  <li class="my-1 cursor-pointer"> <a href="">Action</a></li>
+                  <li class="my-1 cursor-pointer"> <a href="">Another action</a></li>
+                  <li class="my-1 cursor-pointer"> <a href="">Somethin else here</a> </li>
+                </ul>
+            </div>
+            <h3 class="text-black py-2 ml-7 text-lg font-bold">Profit & Expenses</h3>
+            <canvas id="profitt-expenses" class="p-2 "></canvas>
+          </div>
+          <div class="traffic-product p-1 ">
+            <canvas id="traffic" class="bg-white rounded-lg p-2 mb-3"></canvas>
+            <canvas id="product" class="bg-white rounded-lg p-2 "></canvas>
+          </div>
+        </div>
+        <!-- End analysis -->
+         <!-- start Tabele  -->
+        <div class=" grid lg:grid-cols-3   gap-4">
+          <div class="Upcoming bg-white col-span-1  rounded-lg p-2 ">
+            <div class="p-2">
+              <h3>Upcoming Schedules</h3>
+              <ul class="mt-2 relative ">
+                <li class="flex items-center relative mb-3  max-sm:w-full">
+                  <div class="time">09:90 am</div>
+                  <div class="data relative text-gray-500 flex-1 ml-10 text-sm">Payment received from John Doe of $385.90</div>
+                </li>
+                <li class=" relative mb-3  flex items-center">
+                  <div class="time ">09:90 am</div>
+                  <div class="data  text-black flex-1 ml-10  text-sm">New sale recorded <span class="block text-sm text-blue-500">#ML-3467</span></div>
+                </li>
+                <li class=" relative mb-3  flex items-center">
+                  <div class="time ">09:90 am</div>
+                  <div class="data  text-black flex-1 ml-10 text-gray-500 text-sm">Payment was made of $64.95 to Michael</div>
+                </li>
+                <li class=" relative mb-3    flex items-center">
+                  <div class="time ">09:90 am</div>
+                  <div class="data  text-black  flex-1 ml-10 text-sm">New sale recorded <span class="block text-sm text-blue-500">#ML-3467</span></div>
+                </li>
+                <li class=" relative mb-3    flex items-center">
+                  <div class="time ">09:90 am</div>
+                  <div class="data relative   text-black flex-1 ml-10  text-sm">New arrival recorded </div>
+                </li>
+                <li class=" relative     flex items-center">
+                  <div class="time ">09:90 am</div>
+                  <div class=" after:text-red-950 text-black flex-1 ml-10  text-gray-500 text-sm">Payment Received</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="top-paying grid lg:col-span-2  bg-white rounded-lg p-2 max-md:overflow-x-scroll">
+            <table class="text-center border-collapse">
+              <thead class="">
+                <tr>
+                  <th class="text-gray-500">Id</th>
+                  <th class="text-gray-500">Assigned</th>
+                  <th class="text-gray-500">Name</th>
+                  <th class="text-gray-500">Priority</th>
+                  <th class="text-gray-500">budget</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="my-1">
+                  <td>1</td>
+                  <td>Sunil Joshi
+                    <p class="text-gray-500">Web Desgner</p>
+                  </td>
+                  <td class="text-sm text-gray-500">Zarea</td>
+                  <td class=" text-center ">
+                    <li class="bg-blue-500 rounded-lg p-1 text-white">Low</li></td>
+                  <td>$24.5K</td>
+                </tr>
+                <tr class="my-1">
+                  <td>2</td>
+                  <td>Sunil Joshi
+                    <p class="text-gray-500">Web Desgner</p>
+                  </td>
+                  <td class="text-sm text-gray-500">Elite Admin</td>
+                  <td class=" text-center ">
+                    <li class="bg-gray-500 rounded-lg p-1 text-white">Medium</li></td>
+                  <td>$24.5K</td>
+                </tr>
+                <tr class="my-1">
+                  <td>3</td>
+                  <td>Christopher Jamil
+                    <p class="text-gray-500">Priject Manager</p>
+                  </td>
+                  <td class="text-sm text-gray-500">MedicalPro WP Theme</td>
+                  <td class=" text-center ">
+                    <li class="bg-red-300 rounded-lg p-1 text-white ">High</li></td>
+                  <td>12.5K</td>
+                </tr>
+                <tr class="my-1">
+                  <td>4</td>
+                  <td>Nirav Joshi
+                    <p class="text-gray-500">Frontend Engineer</p>
+                  </td>
+                  <td class="text-sm text-gray-500">Hosting Press HTML</td>
+                  <td class=" text-center ">
+                    <li class="bg-green-500 rounded-lg p-1 text-white">Critical</li></td>
+                  <td>$2.5K</td>
+                </tr>
+                <tr class="my-1">
+                  <td>5</td>
+                  <td>Tim Geroge
+                    <p class="text-gray-500">Web Desgner</p>
+                  </td>
+                  <td class=" text-sm text-gray-500">Hosting PressHTML</td>
+                  <td class=" text-center">
+                    <li class="bg-green-500 rounded-lg p-1 text-white">Critical</li></td>
+                  <td>$5.5K</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+         <!-- End Tabele  -->
+          <!-- start product  -->
+           <div class="product flex items-center justify-center flex-wrap md:flex-nowrap my-3 ">
+            <div class="card bg-white rounded-lg col-span-3 mx-2 relative md:w-3/4  sm:w-4/5 mb-3">
+              <div class="imeg overflow-hidden rounded-lg">
+                <img src="../assets/images/product@.jpg" alt="product" class="transition-all duration-700 hover:scale-125">
+                <div class="add  flex justify-end "><i class="fa-solid fa-cart-plus rounded-full p-2 -mt-3 mr-2 bg-blue-500 cursor-pointer text-white"></i></div>
+              </div>
+              <div class="data px-3 mb-3 flex items-center justify-between">
+                <div class="name-salry">
+                  <div class="name">Boat Headphone</div>
+                  <div class="salry">$285 <span class="discount line-through text-gray-500 ml-1 text-sm">$375</span></div>
+                </div>
+                <div class="evaluate flex">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white rounded-lg col-span-3 mx-2 relative md:w-3/4  sm:w-4/5 mb-3">
+              <div class="imeg overflow-hidden rounded-lg">
+                <img src="../assets/images/product!.jpg" class="transition-all duration-700 hover:scale-125" alt="">
+                <div class="add  flex justify-end "><i class="fa-solid fa-cart-plus rounded-full p-2 -mt-3 mr-2 bg-blue-500 cursor-pointer text-white"></i></div>
+              </div>
+              <div class="data px-3 mb-3 flex items-center justify-between">
+                <div class="name-salry">
+                  <div class="name">Boat Headphone</div>
+                  <div class="salry">$285 <span class="discount line-through text-gray-500 ml-1 text-sm">$375</span></div>
+                </div>
+                <div class="evaluate flex">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white rounded-lg col-span-3 mx-2 relative md:w-3/4  sm:w-4/5 mb-3">
+              <div class="imeg overflow-hidden rounded-lg">
+                <img src="../assets/images/product$.jpg" alt="" class="transition-all duration-700 hover:scale-125">
+                <div class="add  flex justify-end "><i class="fa-solid fa-cart-plus rounded-full p-2 -mt-3 mr-2 bg-blue-500 cursor-pointer text-white"></i></div>
+              </div>
+              <div class="data px-3 mb-3 flex items-center justify-between">
+                <div class="name-salry">
+                  <div class="name">Boat Headphone</div>
+                  <div class="salry">$285 <span class="discount line-through text-gray-500 ml-1 text-sm">$375</span></div>
+                </div>
+                <div class="evaluate flex">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-white rounded-lg   mx-2 relative md:w-3/4  sm:w-4/5 mb-3">
+              <div class="imeg overflow-hidden rounded-lg">
+                <img src="../assets/images/product.jpg" alt="" class="transition-all duration-700 hover:scale-125">
+                <div class="add  flex justify-end "><i class="fa-solid fa-cart-plus rounded-full p-2 -mt-3 mr-2 bg-blue-500 cursor-pointer text-white"></i></div>
+              </div>
+              <div class="data px-3 mb-3 flex items-center justify-between">
+                <div class="name-salry">
+                  <div class="name">Boat Headphone</div>
+                  <div class="salry">$285 <span class="discount line-through text-gray-500 ml-1 text-sm">$375</span></div>
+                </div>
+                <div class="evaluate flex">
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star text-yellow-500"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+            </div>
+           </div>
+          <!-- End product  -->
+          <div></div>
+      </div>
+      <!-- End dashbord -->
+
+    </div>
+     <!-- End wrapper -->
+  </div>
+<script src="../assets/typeScripte/chratIndex.js"></script>
+<script src="../assets/typeScripte/index.js"></script>
+</body>  
+
+</html>
+
+<!-- <iframe src="https://tabler-icons.io/" title="Inline Frame Example" frameborder="0" width="100%" height="650"></iframe> -->

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  <!-- Tailwind css  -->
+  <link rel="stylesheet" href="../assets/style/output.css" />
+  <!-- font aweesomes  -->
+  <link rel="stylesheet" href="../assets/style/all.css" />
+  <!-- stylecss  -->
+  <link rel="stylesheet" href="../assets/style/style.css" />
+  </head>
+  <body>
+    <div
+      class="page w-full p-2 overflow-x-hidden bg-slate-200 transition duration-500"
+    >
+      <!--###### strat sidebar  -->
+      <div
+        class="sidebar w-60 bg-white shadow-md shadow-slate-600 fixed z-40 transition duration-500 md:-translate-x-96 xl:translate-x-0 col-span-4 rounded-md"
+      >
+        <nav class=" ">
+          <div
+            class="logo bg-gradient-to-r from-stone-900 to-gray-500 font-bold block w-full text-center shadow-sm shadow-slate-400"
+          >
+            zarea
+          </div>
+          <ul class="overflow-hidden">
+            <p class="text-gray-500 my-4 ml-3">Home</p>
+            <a
+              href="./index.html" draggable="false"
+              class="cursor-pointer mb-4 flex items-center justify-start py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-circle-dot ml-4"></i>
+              <div class="text-bar ml-3">Dashbord</div>
+            </a>
+            <p class="text-gray-500 my-4 ml-3">Ui components</p>
+
+            <a
+              href="alert.html"  draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-circle-radiation ml-8 block w-8"></i>
+              <div class="text-bar">Alert</div>
+            </a>
+            <a
+              href="Button.html"  draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-circle-dot ml-8 block w-8"></i>
+              <div class="text-bar">Button</div>
+            </a>
+            <a
+              href=" "  draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-credit-card ml-8 block w-8"></i>
+              <div class="text-bar">Cards</div>
+            </a>
+            <a
+              href=" " draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-table-list ml-8 block w-8"></i>
+              <div class="text-bar">Tables</div>
+            </a>
+            <p class="text-gray-500 my-4 ml-3">AUTH</p>
+
+            <a
+              href=" "  draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-right-to-bracket ml-8 block w-8"></i>
+              <div class="text-bar">Login</div>
+            </a>
+            <a
+              href=" "  draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-user-plus ml-8 block w-8"></i>
+              <div class="text-bar">Register</div>
+            </a>
+            <p class="text-gray-500 my-4 ml-3">EXTRA</p>
+            <a
+              href=" " draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-table-list ml-8 block w-8"></i>
+              <div class="text-bar">Icons</div>
+            </a>
+            <a
+              href=" "  draggable="false"
+              class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"
+              ><i class="fa-solid fa-face-smile ml-8 block w-8"></i>
+              <div class="text-bar">Sample Page</div>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <!-- End sidebar  -->
+      <!-- start wrapper -->
+      <div
+        class="wrapper m-1 md:w-full lg:w-10/12 xl:w-8/12 rounded-md md:translate-x-0 lg:translate-x-36 xl:translate-x-96 transition-transform duration-700"
+      >
+        <!--### start navigation -->
+        <div
+          class="navigation mt-1 max:w-full shadow-lg shadow-gray-200 w-11/12 mx-auto rounded-lg flex justify-between items-center p-2 bg-slate-50"
+        >
+          <div class="flex m-2">
+            <div class="menu xl:hidden cursor-pointer mr-4" id="menu">
+              <div><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="bell cursor-pointer">
+              <i class="fa-classic fa-regular fa-bell fa-fw"></i>
+            </div>
+          </div>
+          <div class="profile relative cursor-pointer">
+            <img
+              src="../assets/images/profile.jpg"
+              class="rounded-full size-10 profile-img"
+              alt="img profile"
+              draggable="false"
+            />
+            <div class="setting absolute bg-white p-1 w-36 rounded-lg z-50">
+              <ul class="p-1">
+                <a href="" class="flex items-center flex-nowrap my-2 relative"
+                  ><i
+                    class="fa-solid fa-user w-6 FLEX justify-center items-center"
+                  ></i>
+                  <div class="title">My profile</div>
+                </a>
+                <a href="" class="flex items-center flex-nowrap my-2 relative"
+                  ><i
+                    class="fa-solid fa-file-invoice w-6 FLEX justify-center items-center"
+                  ></i>
+                  <div class="title">My Account</div>
+                </a>
+                <a href="" class="flex items-center flex-nowrap my-2 relative"
+                  ><i
+                    class="fa-solid fa-list-check w-6 FLEX justify-center items-center"
+                  ></i>
+                  <div class="title">My Task</div>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End navigation -->
+
+        <!--#### Start Alert -->
+        <div class="alert-aasic bg-white my-4 rounded-lg ">
+            <div class="p-3 border-solid border-b-2  border-gray-300 "><h3>Alert Basic</h3></div>
+            <div class="alert p-6">
+                <div class="item-alert my-3">
+                    <div class="bg-red-100 text-red-500 text-xs p-3 rounded-lg"><p>This is an error alert — check it out!</p></div>
+                </div>
+                <div class="item-alert my-3">
+                    <div class="bg-yellow-50 text-yellow-500 text-xs p-3 rounded-lg"><p>This is an error alert — check it out!</p></div>
+                </div>
+                <div class="item-alert my-3">
+                    <div class="bg-blue-100 text-blue-500 text-xs p-3 p-3 rounded-lg"><p class="">This is an error alert — check it out!</p></div>
+                </div>
+                <div class="item-alert">
+                    <div class="bg-green-100 text-green-500 text-xs p-3 rounded-lg"><p>This is an error alert — check it out!</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="alert-filled bg-white my-4 rounded-lg flex-none">
+            <div class="p-3 border-solid border-b-2  border-gray-300 "><h3>Alert Filled</h3></div>
+            <div class="alert p-6">
+                <div class="item-alert my-3">
+                    <div class="bg-red-100 text-red-500 text-xs p-3 rounded-lg flex items-center"><i class="fa-solid fa-circle-xmark mr-3 text-3xl"></i><p>This is an error alert — check it out!</p></div>
+                </div>
+                <div class="item-alert my-3">
+                    <div class="bg-yellow-50 text-yellow-500 flex items-center p-3 "><i class="fa-solid fa-circle-info mr-3 text-3xl"></i><p class="text-xs">This is an error alert — check it out!</p></div>
+                </div>
+                <div class="item-alert my-3">
+                    <div class="bg-blue-100 text-blue-500 text-xs p-3 p-3 rounded-lg flex items-center"><i class="fa-solid fa-circle-info mr-3 text-3xl"></i><p class="">This is an error alert — check it out!</p></div>
+                </div>
+                <div class="item-alert">
+                    <div class="bg-green-100 text-green-500 text-xs p-3 rounded-lg flex items-center"><i class="fa-solid fa-circle-check mr-3 text-3xl"></i><p>This is an error alert — check it out!</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="alert-closable bg-white rounded-lg">
+            <div class="p-3 border-solid border-b-2  border-gray-300 "><h3>Alert Closable</h3></div>
+            <div class=" relative p-6 overflow-hidden transition-all duration-500 " id="closable">
+                <i class="fa-solid fa-x absolute right-10 top-8 cursor-pointer text-sm border" id="hiding" ></i>
+                <div class="bg-blue-100 rounded-lg  border-l-8 border-blue-500 p-4 ">
+                     
+                     <h2 class="text-md">Closable Alert</h2>
+                     <p class="text-xs">Aenean imperdiet. Quisque id odio. Cras dapibus. Pellentesque ut neque. Cras dapibus. Vivamus consectetuer hendrerit lacus. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non</p>
+                </div>
+            </div>
+            <div class="px-6 p-2 ">
+                <button id="reset" class="bg-blue-400  hidden  text-white px-2 py-1 rounded-md ">Reset</button>
+            </div>
+        </div>
+        <!-- End Alert -->
+      </div>
+      <!-- End wrapper -->
+    </div>
+    <script src="../assets/scripts/alert.js"></script>
+  </body>
+</html>
